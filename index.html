@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vilocer.me | Веб-разработка</title>
+
+    <!-- Styles -->
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- PrettyPrint style -->
+    <link rel="stylesheet" href="assets/css/prettyprint.css">
+
+
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/5bd0bdd82a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__item logo">
+                    <a href="#" class="nav__link">vilocer</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Обо мне</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Проекты</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Блог</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link nav__btn">Написать мне</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="intro__background">
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__text">
+                        <div class="intro__suptitle">
+                            <h1>Привет,</h1>
+                        </div>
+                        <div class="intro__title">
+                            <p>Меня зовут <span class="name">Артём Сергеев, </span>я работаю Веб-разработчиком.</p>
+                        </div>
+                        <a href="#" class="intro__btn">Написать мне</a>
+                    </div>
+                    <div class="intro__subtitle">
+                        Подробнее о том, чем я занимаюсь
+                    </div>
+                    <a href="#" class="intro__next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="section__header">
+                <div class="section__title">
+                   Моя профессия - Full Stack Web Developer
+                </div>
+            </div>
+            <div class="section__body example">
+                <p class="example__text" >Наглядный пример:</p>
+                <div class="example__inner">
+                    <pre class="example__item">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>HTML Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1>Hello, Word!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                <pre class="example__item">
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  font-family: 'Montserrat', cursive;
+  font-size: 15px;
+  margin: 0;
+}                 </pre>
+                <pre class="example__item">
+from django.shortcuts import render
+from django.core.exceptions import PermissionDenied
+
+
+def home(request):
+    if request.user.is_authenticated:
+        return render(request, 'home.html')
+    else:
+        raise PermissionDenied()</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section section--dark">
+        <div class="container">
+            <div class="section__header">
+                <div class="section__title">
+                    Веб-разработка
+                </div>
+            </div>
+            <div class="section__body wedo">
+                <div class="wedo__inner">
+                    <div class="wedo__item">
+                        <p>Создание сайтов "под ключ". <br> Разработка сайтов с нуля, от вёрстки макета до бизнес-логики. <br> Доработка ваших сайтов. <br> Обновление дизайна, добавление адаптивности под разные устройства. <br> Создание тем для WordPress, Оптимизация.</p>
+                    </div>
+                </div>
+                <div class="wedo__image">
+                    <img src="assets/images/wedo/1.jpg" alt="Viloсer | Web-Development WeDo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- google prettyprint js  -->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- prettyprint js initialization -->
+    <script src="assets/js/prettyprint_init.js"></script>
+</body>
+</html>
